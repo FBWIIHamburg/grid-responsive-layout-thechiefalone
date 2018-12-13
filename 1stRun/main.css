@@ -5,7 +5,7 @@ body {
 .header {
     background-color: black;
     color: white;
-    padding: 10px;
+    padding: 5px;
     display: grid;
     grid-template-columns: 70% 30%;
 }
@@ -55,4 +55,41 @@ body {
 
 .footer>p {
     padding-left: 10%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .news {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: 0;
+        padding-bottom: 5%;
+        background-color: lightgrey;
+    }
+    .header {
+        background-color: black;
+        color: white;
+        margin: 0;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    .content>div>h1 {
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+    }
+    .content>div>article {
+        background-color: white;
+        padding: 5px;
+        margin: 0;
+        text-align: center;
+
+    }
+    .footer>p {
+        justify-content: center;
+        text-align: center
+    }
 }
